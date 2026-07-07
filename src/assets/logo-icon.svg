@@ -1,0 +1,34 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ff-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background square -->
+  <rect width="128" height="128" rx="28" fill="url(#ff-bg)"/>
+
+  <!-- flow line: dips then rises, echoing the dashboard's line chart -->
+  <path
+    d="M28 78 L46 62 L60 72 L100 34"
+    fill="none"
+    stroke="white"
+    stroke-width="7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- arrowhead at the end of the rising line -->
+  <path
+    d="M84 34 L100 34 L100 50"
+    fill="none"
+    stroke="white"
+    stroke-width="7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- base line, representing a ledger / balance -->
+  <line x1="28" y1="94" x2="100" y2="94" stroke="white" stroke-width="7" stroke-linecap="round" opacity="0.55"/>
+</svg>
