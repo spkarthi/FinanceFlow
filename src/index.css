@@ -1,1 +1,54 @@
 @import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-sans: "Inter", "system-ui", "sans-serif";
+
+  /* Primary Palette (Purple) */
+  --color-primary-50: #f3e8ff;
+  --color-primary-100: #e9d5ff;
+  --color-primary-200: #d8b4fe;
+  --color-primary-300: #c084fc;
+  --color-primary-400: #a855f7;
+  --color-primary-500: #9333ea;
+  --color-primary-600: #7e22ce;
+  --color-primary-700: #6b21a8;
+  --color-primary-800: #581c87;
+  --color-primary-900: #3f0f5c;
+
+  /* Income Palette (Green) */
+  --color-income-50: #f0fdf4;
+  --color-income-100: #dcfce7;
+  --color-income-200: #bbf7d0;
+  --color-income-300: #86efac;
+  --color-income-400: #4ade80;
+  --color-income-500: #22c55e;
+  --color-income-600: #16a34a;
+  --color-income-700: #15803d;
+  --color-income-800: #166534;
+  --color-income-900: #145231;
+
+  /* Expense Palette (Red) */
+  --color-expense-50: #fef2f2;
+  --color-expense-100: #fee2e2;
+  --color-expense-200: #fecaca;
+  --color-expense-300: #fca5a5;
+  --color-expense-400: #f87171;
+  --color-expense-500: #ef4444;
+  --color-expense-600: #dc2626;
+  --color-expense-700: #b91c1c;
+  --color-expense-800: #991b1b;
+  --color-expense-900: #7f1d1d;
+
+  /* Neutral Palette */
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-300: #d1d5db;
+  --color-neutral-400: #9ca3af;
+  --color-neutral-500: #6b7280;
+  --color-neutral-600: #4b5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #1f2937;
+  --color-neutral-900: #111827;
+}
