@@ -1,16 +1,67 @@
-# React + Vite
+# FinanceFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal finance management dashboard built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Prerequisites
+- Node.js (v16+)
+- npm or yarn
 
-## React Compiler
+### Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Visit `http://localhost:5174` in your browser.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Development Workflow
+
+### Branch Naming Convention
+
+All feature branches follow the pattern: `feat/TASK-XXX-description`
+
+Examples:
+- `feat/task-001-scaffold-project`
+- `feat/task-002-design-tokens-base-styles`
+- `feat/task-003-git-github-setup`
+
+### Creating a Pull Request
+
+1. Create a branch following the naming convention
+2. Make your changes
+3. Push to your branch
+4. Open a PR against `main`
+5. Ensure main branch protection rules pass
+6. Request review and merge
+
+## Tech Stack
+
+- **Framework**: React 19 + Vite 8
+- **Styling**: Tailwind CSS 4 with custom color tokens
+- **Typography**: Inter (Google Fonts)
+- **Build Tool**: Vite with @tailwindcss/vite plugin
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── pages/          # Page components
+├── hooks/          # Custom React hooks
+├── layouts/        # Layout components
+├── data/           # Data files and constants
+└── assets/         # Images and static files
+```
+
+## Design System
+
+The project uses a custom Tailwind CSS design system with four main color palettes:
+- **Primary** (Purple): Main brand color
+- **Income** (Green): Positive transactions
+- **Expense** (Red): Negative transactions
+- **Neutral** (Grey): UI backgrounds and text
+
+See `tailwind.config.js` for the complete color definitions.
