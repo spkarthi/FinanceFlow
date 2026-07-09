@@ -11,6 +11,28 @@ const user = {
   avatarUrl: null, // fallback to initials if no avatar
 };
 
+const links = [
+  { to: "/dashboard", label: "Dashboard" },
+  { to: "/transactions", label: "Transactions" },
+  { to: "/budgets", label: "Budgets" },
+  { to: "/reports", label: "Reports" },
+  { to: "/settings", label: "Settings" },
+];
+
+{links.map(({ to, label }) => (
+  <NavLink
+    key={to}
+    to={to}
+    className={({ isActive }) =>
+      `block rounded-lg px-3 py-2 text-sm font-medium ${
+        isActive ? "bg-slate-800 text-white" : "text-slate-400 hover:bg-slate-800/50"
+      }`
+    }
+  >
+    {label}
+  </NavLink>
+))}
+
 
 function Logo() {
   return (
@@ -25,17 +47,13 @@ function NavItem({ label, path, icon: Icon }) {
   return (
     <NavLink
       to={path}
-      end={path === "/"}
       className={({ isActive }) =>
-        [
-          "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
-          isActive
-            ? "bg-purple-50 text-purple-700"
-            : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
-        ].join(" ")
+        `flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
+          isActive ? "bg-purple-50 text-purple-700" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+        }`
       }
     >
-      <Icon className="h-[18px] w-[18px]" />
+      <Icon className="h-4.5 w-4.5" />
       {label}
     </NavLink>
   );
