@@ -39,7 +39,7 @@ function NotificationBell() {
       className="relative flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 hover:bg-gray-50"
       aria-label={`${notificationCount} unread notifications`}
     >
-      <Bell className="h-[18px] w-[18px] text-gray-500" />
+      <Bell className="h-4.5 w-4.5 text-gray-500" />
       {notificationCount > 0 && (
         <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-[11px] font-medium text-white">
           {notificationCount}

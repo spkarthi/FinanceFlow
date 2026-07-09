@@ -1,25 +1,26 @@
-import { Routes, Route } from 'react-router-dom'
-import Sidebar from './components/Sidebar.jsx'
-import Topbar from './components/Topbar.jsx'
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import AppLayout from "./routes/AppLayout";
+import Dashboard from "./routes/Dashboard";
+import Transactions from "./routes/Transactions";
+import Budgets from "./routes/Budgets";
+import Reports from "./routes/Reports";
+import Settings from "./routes/Settings";
+import NotFound from "./routes/NotFound";
 
-function App() {
+export default function App() {
   return (
-    <div className="flex">
-      <Sidebar />
-      
-      <main className="flex-1 px-8 pb-8 pt-0">
-        <Topbar title="Dashboard" />
-            
-        <Routes>
-          <Route path="/" element={
-            <div>
-              {/* Dashboard content goes here */}
-            </div>
-          } />
-        </Routes>
-      </main>
-    </div>
-  )
-}
 
-export default App;
+      <Routes>
+        <Route element={<AppLayout />}>
+          <Route index element={<Navigate to="/dashboard" replace />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="transactions" element={<Transactions />} />
+          <Route path="budgets" element={<Budgets />} />
+          <Route path="reports" element={<Reports />} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+
+  );
+}
