@@ -1,0 +1,49 @@
+{
+  "alerts": [
+    {
+      "alertId": "alert_001",
+      "type": "budget_exceeded",
+      "severity": "warning",
+      "message": "You've gone over your Transportation budget by $18.90 this month.",
+      "relatedId": "bud_002",
+      "createdAt": "2026-07-06T14:20:00Z",
+      "read": false
+    },
+    {
+      "alertId": "alert_002",
+      "type": "bill_overdue",
+      "severity": "critical",
+      "message": "American Express Card Payment of $842.17 is overdue.",
+      "relatedId": "bill_005",
+      "createdAt": "2026-07-26T08:00:00Z",
+      "read": false
+    },
+    {
+      "alertId": "alert_003",
+      "type": "bill_due_soon",
+      "severity": "info",
+      "message": "Planet Fitness membership ($45.00) is due in 3 days.",
+      "relatedId": "bill_004",
+      "createdAt": "2026-07-27T08:00:00Z",
+      "read": true
+    },
+    {
+      "alertId": "alert_004",
+      "type": "low_balance",
+      "severity": "warning",
+      "message": "Total Checking balance is below your $1,000 threshold after upcoming bills.",
+      "relatedId": "acc_chk_001",
+      "createdAt": "2026-07-08T09:00:00Z",
+      "read": false
+    },
+    {
+      "alertId": "alert_005",
+      "type": "large_transaction",
+      "severity": "info",
+      "message": "A transaction of $1,450.00 (Rent) was posted to Total Checking.",
+      "relatedId": "txn_00004",
+      "createdAt": "2026-07-05T10:00:00Z",
+      "read": true
+    }
+  ]
+}

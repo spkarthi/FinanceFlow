@@ -1,0 +1,14 @@
+{
+  "period": "2026-07",
+  "totalExpenses": 3120.45,
+  "categories": [
+    { "category": "Housing", "amount": 1450.00, "percent": 46.5, "color": "#6366f1" },
+    { "category": "Groceries", "amount": 412.30, "percent": 13.2, "color": "#22c55e" },
+    { "category": "Transportation", "amount": 268.90, "percent": 8.6, "color": "#f59e0b" },
+    { "category": "Bills and Utilities", "amount": 320.00, "percent": 10.3, "color": "#0ea5e9" },
+    { "category": "Shopping", "amount": 285.67, "percent": 9.2, "color": "#ec4899" },
+    { "category": "Food and Drink", "amount": 198.45, "percent": 6.4, "color": "#a855f7" },
+    { "category": "Entertainment", "amount": 84.98, "percent": 2.7, "color": "#14b8a6" },
+    { "category": "Health and Fitness", "amount": 100.15, "percent": 3.2, "color": "#ef4444" }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "bills": [
+    {
+      "billId": "bill_001",
+      "name": "Rent",
+      "amount": 1450.00,
+      "dueDate": "2026-08-01",
+      "status": "upcoming",
+      "autopay": true,
+      "category": "Housing",
+      "accountId": "acc_chk_001"
+    },
+    {
+      "billId": "bill_002",
+      "name": "CPS Energy",
+      "amount": 120.00,
+      "dueDate": "2026-08-03",
+      "status": "upcoming",
+      "autopay": false,
+      "category": "Bills and Utilities",
+      "accountId": "acc_chk_001"
+    },
+    {
+      "billId": "bill_003",
+      "name": "Netflix",
+      "amount": 14.99,
+      "dueDate": "2026-08-06",
+      "status": "upcoming",
+      "autopay": true,
+      "category": "Entertainment",
+      "accountId": "acc_chk_001"
+    },
+    {
+      "billId": "bill_004",
+      "name": "Planet Fitness",
+      "amount": 45.00,
+      "dueDate": "2026-07-30",
+      "status": "due_soon",
+      "autopay": true,
+      "category": "Health and Fitness",
+      "accountId": "acc_chk_001"
+    },
+    {
+      "billId": "bill_005",
+      "name": "American Express Card Payment",
+      "amount": 842.17,
+      "dueDate": "2026-07-25",
+      "status": "overdue",
+      "autopay": false,
+      "category": "Credit Card",
+      "accountId": "acc_cc_003"
+    }
+  ]
+}

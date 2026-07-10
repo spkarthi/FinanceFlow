@@ -1,0 +1,50 @@
+{
+  "period": "2026-07",
+  "budgets": [
+    {
+      "budgetId": "bud_001",
+      "category": "Groceries",
+      "limit": 500.00,
+      "spent": 412.30,
+      "remaining": 87.70,
+      "percentUsed": 82.5,
+      "status": "on_track"
+    },
+    {
+      "budgetId": "bud_002",
+      "category": "Transportation",
+      "limit": 250.00,
+      "spent": 268.90,
+      "remaining": -18.90,
+      "percentUsed": 107.6,
+      "status": "over_budget"
+    },
+    {
+      "budgetId": "bud_003",
+      "category": "Entertainment",
+      "limit": 150.00,
+      "spent": 84.98,
+      "remaining": 65.02,
+      "percentUsed": 56.7,
+      "status": "on_track"
+    },
+    {
+      "budgetId": "bud_004",
+      "category": "Shopping",
+      "limit": 300.00,
+      "spent": 285.67,
+      "remaining": 14.33,
+      "percentUsed": 95.2,
+      "status": "near_limit"
+    },
+    {
+      "budgetId": "bud_005",
+      "category": "Bills and Utilities",
+      "limit": 350.00,
+      "spent": 320.00,
+      "remaining": 30.00,
+      "percentUsed": 91.4,
+      "status": "near_limit"
+    }
+  ]
+}
