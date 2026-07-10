@@ -1,0 +1,15 @@
+{
+  "granularity": "monthly",
+  "range": {
+    "from": "2026-02",
+    "to": "2026-07"
+  },
+  "series": [
+    { "date": "2026-02", "income": 5000.00, "expenses": 3450.20 },
+    { "date": "2026-03", "income": 5000.00, "expenses": 3210.75 },
+    { "date": "2026-04", "income": 5100.00, "expenses": 3580.10 },
+    { "date": "2026-05", "income": 5100.00, "expenses": 2990.40 },
+    { "date": "2026-06", "income": 5200.00, "expenses": 3190.60 },
+    { "date": "2026-07", "income": 5200.00, "expenses": 3120.45 }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "pagination": {
+    "page": 1,
+    "pageSize": 20,
+    "totalItems": 12,
+    "totalPages": 1
+  },
+  "transactions": [
+    {
+      "transactionId": "txn_00001",
+      "accountId": "acc_chk_001",
+      "date": "2026-07-07",
+      "postedDate": "2026-07-07",
+      "amount": -84.32,
+      "description": "WHOLEFDS MKT 10345",
+      "merchantName": "Whole Foods Market",
+      "category": ["Food and Drink", "Groceries"],
+      "pending": false,
+      "type": "debit"
+    },
+    {
+      "transactionId": "txn_00002",
+      "accountId": "acc_chk_001",
+      "date": "2026-07-06",
+      "postedDate": "2026-07-06",
+      "amount": -14.99,
+      "description": "NETFLIX.COM",
+      "merchantName": "Netflix",
+      "category": ["Entertainment", "Subscriptions"],
+      "pending": false,
+      "type": "debit"
+    },
+    {
+      "transactionId": "txn_00003",
+      "accountId": "acc_cc_003",
+      "date": "2026-07-06",
+      "postedDate": "2026-07-07",
+      "amount": -56.20,
+      "description": "SHELL OIL 57443210",
+      "merchantName": "Shell",
+      "category": ["Transportation", "Gas"],
+      "pending": false,
+      "type": "debit"
+    },
+    {
+      "transactionId": "txn_00004",
+      "accountId": "acc_chk_001",
+      "date": "2026-07-05",
+      "postedDate": "2026-07-05",
+      "amount": -1450.00,
+      "description": "RENT PAYMENT - ONLINE",
+      "merchantName": "Greystar Property Mgmt",
+      "category": ["Housing", "Rent"],
+      "pending": false,
+      "type": "debit"
+    },
+    {
+      "transactionId": "txn_00005",
+      "accountId": "acc_chk_001",
+      "date": "2026-07-05",
+      "postedDate": "2026-07-05",
+      "amount": 5200.00,
+      "description": "CAPITAL GROUP PAYROLL",
+      "merchantName": "Capital Group",
+      "category": ["Income", "Payroll"],
+      "pending": false,
+      "type": "credit"
+    },
+    {
+      "transactionId": "txn_00006",
+      "accountId": "acc_cc_003",
+      "date": "2026-07-04",
+      "postedDate": "2026-07-05",
+      "amount": -22.50,
+      "description": "STARBUCKS #4521",
+      "merchantName": "Starbucks",
+      "category": ["Food and Drink", "Coffee Shops"],
+      "pending": false,
+      "type": "debit"
+    },
+    {
+      "transactionId": "txn_00007",
+      "accountId": "acc_chk_001",
+      "date": "2026-07-03",
+      "postedDate": "2026-07-03",
+      "amount": -120.00,
+      "description": "CPS ENERGY UTILITY BILL",
+      "merchantName": "CPS Energy",
+      "category": ["Bills and Utilities", "Electric"],
+      "pending": false,
+      "type": "debit"
+    },
+    {
+      "transactionId": "txn_00008",
+      "accountId": "acc_cc_003",
+      "date": "2026-07-02",
+      "postedDate": "2026-07-03",
+      "amount": -215.67,
+      "description": "AMAZON.COM*A1B2C3",
+      "merchantName": "Amazon",
+      "category": ["Shopping", "General Merchandise"],
+      "pending": false,
+      "type": "debit"
+    },
+    {
+      "transactionId": "txn_00009",
+      "accountId": "acc_sav_002",
+      "date": "2026-07-01",
+      "postedDate": "2026-07-01",
+      "amount": 1000.00,
+      "description": "TRANSFER FROM CHECKING",
+      "merchantName": null,
+      "category": ["Transfer", "Internal"],
+      "pending": false,
+      "type": "credit"
+    },
+    {
+      "transactionId": "txn_00010",
+      "accountId": "acc_chk_001",
+      "date": "2026-07-01",
+      "postedDate": "2026-07-01",
+      "amount": -1000.00,
+      "description": "TRANSFER TO SAVINGS",
+      "merchantName": null,
+      "category": ["Transfer", "Internal"],
+      "pending": false,
+      "type": "debit"
+    },
+    {
+      "transactionId": "txn_00011",
+      "accountId": "acc_chk_001",
+      "date": "2026-06-30",
+      "postedDate": "2026-06-30",
+      "amount": -45.00,
+      "description": "PLANET FITNESS MEMBERSHIP",
+      "merchantName": "Planet Fitness",
+      "category": ["Health and Fitness", "Gym"],
+      "pending": false,
+      "type": "debit"
+    },
+    {
+      "transactionId": "txn_00012",
+      "accountId": "acc_cc_003",
+      "date": "2026-06-29",
+      "postedDate": "2026-06-30",
+      "amount": -9.99,
+      "description": "SPOTIFY USA",
+      "merchantName": "Spotify",
+      "category": ["Entertainment", "Subscriptions"],
+      "pending": true,
+      "type": "debit"
+    }
+  ]
+}

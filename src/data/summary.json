@@ -1,0 +1,24 @@
+{
+  "period": "2026-07",
+  "asOf": "2026-07-09T09:00:00Z",
+  "income": {
+    "amount": 5200.00,
+    "percentChange": 4.2,
+    "trend": "up"
+  },
+  "expenses": {
+    "amount": 3120.45,
+    "percentChange": -2.1,
+    "trend": "down"
+  },
+  "savings": {
+    "amount": 1000.00,
+    "percentChange": 12.5,
+    "trend": "up"
+  },
+  "netWorth": {
+    "amount": 84819.94,
+    "percentChange": 3.8,
+    "trend": "up"
+  }
+}
