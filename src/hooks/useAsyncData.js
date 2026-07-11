@@ -20,7 +20,7 @@ export default function useAsyncData(asyncFunction, dependencies = []) {
       cancelled = true;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, deps);
+  }, dependencies);
 
   return state;
 }
