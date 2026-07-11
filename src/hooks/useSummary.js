@@ -1,7 +1,7 @@
 // src/hooks/useSummary.js
-import { useAsyncData } from "./useAsyncData";
+import  useAsyncData  from "./useAsyncData";
 import { fetchSummary } from "./mockFetchers";
 
-export function useSummary() {
+export default function useSummary() {
   return useAsyncData(fetchSummary, []);
 }

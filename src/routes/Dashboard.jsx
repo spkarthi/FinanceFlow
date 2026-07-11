@@ -1,3 +1,6 @@
+import SummaryCards from "../components/SummaryCards";
 export default function Dashboard() {
-  return <h1 className="text-2xl font-semibold">Dashboard</h1>;
+  return (<div className="space-y-6">
+      <SummaryCards />
+    </div>);
 }
