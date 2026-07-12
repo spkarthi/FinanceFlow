@@ -2,6 +2,7 @@ import SummaryCards from "../components/SummaryCards";
 import SpendingChart from "../components/SpendingChart";
 import ExpensesByCategoryChart from "../components/ExpensesByCategoryChart";
 import TransactionsTable from "../components/TransactionsTable";
+import BudgetsList from "../components/BudgetsList";
 
 export default function Dashboard() {
   return (
@@ -13,6 +14,7 @@ export default function Dashboard() {
         <ExpensesByCategoryChart />
       </div>
       <TransactionsTable />
+      <BudgetsList />
     </div>
   );
 }

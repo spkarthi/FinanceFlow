@@ -1,4 +1,4 @@
-import {useAsyncData} from "./useAsyncData";
+import useAsyncData from "./useAsyncData";
 import {fetchBudgets} from "./mockFetchers";
 
 export function useBudgets() {
