@@ -9,19 +9,39 @@ import AlertsPanel from "../components/AlertsPanel";
 export default function Dashboard() {
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-semibold">Dashboard</h1>
+      
       <SummaryCards />
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <SpendingChart />
-        <ExpensesByCategoryChart />
+
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
+        {/* Main column — 3/4 width */}
+        <div className="space-y-6 lg:col-span-3">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
+            <div className="lg:col-span-3">
+              <SpendingChart />
+            </div>
+            <div className="lg:col-span-2">
+              <ExpensesByCategoryChart />
+            </div>
+          </div>
+        </div>
+
+        {/* Sidebar — 1/4 width */}
+        <div className="space-y-6">
+          <BudgetsList />
+        </div>
       </div>
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <TransactionsTable />
-        <BudgetsList />
-      </div>
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <UpcomingBills />
-        <AlertsPanel />
+
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
+        {/* Main column — 3/4 width */}
+        <div className="lg:col-span-3">
+          <TransactionsTable />
+        </div>
+
+        {/* Sidebar — 1/4 width */}
+        <div className="space-y-6">
+          <UpcomingBills />
+          <AlertsPanel />
+        </div>
       </div>
     </div>
   );

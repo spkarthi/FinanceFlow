@@ -10,7 +10,7 @@ export default function TransactionsTable() {
   if (error) return <p className="text-sm text-red-600">Couldn't load transactions</p>;
 
   return (
-    <div className="rounded-lg border bg-white p-4 shadow-sm">
+    <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm">
       <div className="mb-4 flex items-center justify-between">
         <h2 className="font-medium">Recent Transactions</h2>
         <Link
