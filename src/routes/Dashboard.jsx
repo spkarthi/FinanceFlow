@@ -9,11 +9,11 @@ import AlertsPanel from "../components/AlertsPanel";
 export default function Dashboard() {
   return (
     <div className="space-y-6">
-      
       <SummaryCards />
 
+      {/* Charts and Budgets row */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
-        {/* Main column — 3/4 width */}
+        {/* Charts container */}
         <div className="space-y-6 lg:col-span-3">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
             <div className="lg:col-span-3">
@@ -25,20 +25,21 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Sidebar — 1/4 width */}
-        <div className="space-y-6">
+        {/* Budgets sidebar */}
+        <div className="lg:col-span-1">
           <BudgetsList />
         </div>
       </div>
 
+      {/* Transactions and Bills/Alerts row */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
-        {/* Main column — 3/4 width */}
+        {/* Recent Transactions */}
         <div className="lg:col-span-3">
           <TransactionsTable />
         </div>
 
-        {/* Sidebar — 1/4 width */}
-        <div className="space-y-6">
+        {/* Bills and Alerts sidebar */}
+        <div className="space-y-6 lg:col-span-1">
           <UpcomingBills />
           <AlertsPanel />
         </div>

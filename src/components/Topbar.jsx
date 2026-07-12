@@ -49,10 +49,24 @@ function NotificationBell() {
   );
 }
 
-export default function Topbar({ title = "Dashboard", showGreeting = true }) {
+export default function Topbar({ title = "Dashboard", showGreeting = true, onMenuClick }) {
   return (
-    <header className="flex flex-col gap-4 border-b border-gray-100 bg-white px-6 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-      <Greeting title={title} showGreeting={showGreeting} />
+    <header className="flex flex-col gap-4 border-b border-gray-100 bg-white px-4 py-4 sm:px-6 md:px-8 md:py-6 md:flex-row md:items-center md:justify-between">
+      <div className="flex items-center justify-between gap-4">
+        {/* Mobile menu button */}
+        {onMenuClick && (
+          <button
+            onClick={onMenuClick}
+            className="rounded-lg border border-gray-200 p-2 hover:bg-gray-50 md:hidden"
+            aria-label="Toggle menu"
+          >
+            <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        )}
+        <Greeting title={title} showGreeting={showGreeting} />
+      </div>
 
       <div className="flex items-center gap-3">
         <DateRangePicker />

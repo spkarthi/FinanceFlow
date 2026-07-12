@@ -102,9 +102,23 @@ function UserFooter() {
   );
 }
 
-export default function Sidebar() {
+export default function Sidebar({ onClose }) {
   return (
     <aside className="flex h-screen w-64 shrink-0 flex-col border-r border-gray-100 bg-white">
+      {/* Close button for mobile */}
+      <div className="flex items-center justify-between border-b border-gray-100 px-4 py-3 md:hidden">
+        <span className="text-sm font-medium text-gray-900">Menu</span>
+        <button
+          onClick={onClose}
+          className="rounded-lg p-1 hover:bg-gray-100"
+          aria-label="Close menu"
+        >
+          <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
       <Logo />
 
       <nav className="flex-1 space-y-1 overflow-y-auto px-4">
