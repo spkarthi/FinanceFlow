@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { AlertTriangle, AlertCircle, Info, ChevronRight } from "lucide-react";
 import { useAlerts } from "../hooks/useAlerts";
 
@@ -14,9 +15,14 @@ export default function AlertsPanel() {
   if (error) return <p className="text-sm text-red-600">Couldn't load alerts</p>;
 
   return (
-    <div className="rounded-lg border bg-white p-4 shadow-sm">
-      <h2 className="mb-4 font-medium">Alerts</h2>
-      <ul className="divide-y">
+    <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm flex flex-col">
+      <div className="mb-4 flex items-center justify-between shrink-0">
+        <h2 className="font-medium">Alerts</h2>
+        <Link to="/alerts" className="text-sm font-medium text-indigo-600 hover:text-indigo-700">
+          View all →
+        </Link>
+      </div>
+      <ul className="divide-y overflow-y-auto flex-1" style={{maxHeight: "160px"}}>
         {data.alerts.map((alert) => {
           const config = SEVERITY_CONFIG[alert.severity] ?? SEVERITY_CONFIG.info;
           const Icon = config.icon;

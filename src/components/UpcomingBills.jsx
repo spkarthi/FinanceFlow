@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Home, Zap, Clapperboard, HeartPulse, CreditCard, Receipt } from "lucide-react";
 import { useBills } from "../hooks/useBills";
 
@@ -30,9 +31,14 @@ export default function UpcomingBills() {
   );
 
   return (
-    <div className="rounded-lg border bg-white p-4 shadow-sm">
-      <h2 className="mb-4 font-medium">Upcoming Bills</h2>
-      <ul className="divide-y">
+    <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm">
+      <div className="mb-4 flex items-center justify-between">
+        <h2 className="font-medium">Upcoming Bills</h2>
+        <Link to="/bills" className="text-sm font-medium text-indigo-600 hover:text-indigo-700">
+          View all →
+        </Link>
+      </div>
+      <ul className="divide-y overflow-y-auto flex-1" style={{maxHeight: "200px"}}>
         {sortedBills.map((bill) => {
           const Icon = CATEGORY_ICONS[bill.category] ?? Receipt;
           const statusColor = STATUS_STYLES[bill.status] ?? "text-gray-500";

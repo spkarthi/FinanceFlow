@@ -16,7 +16,7 @@ export default function ExpensesByCategoryChart() {
   const total = categories.reduce((sum, c) => sum + c.amount, 0);
 
   return (
-    <div className="rounded-lg border bg-white p-4 shadow-sm">
+    <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm flex flex-col" style={{height: "424px"}}>
       <h2 className="mb-4 font-medium">Expenses by Category</h2>
 
       <div className="flex items-center gap-6">
@@ -54,7 +54,7 @@ export default function ExpensesByCategoryChart() {
         </div>
 
         {/* Side legend */}
-        <ul className="flex-1 space-y-2">
+        <ul className="flex-1 space-y-2 overflow-y-auto" style={{maxHeight: "300px"}}>
           {categories.map((c) => (
             <li key={c.category} className="flex items-center justify-between text-sm">
               <div className="flex items-center gap-2">
