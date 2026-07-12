@@ -3,6 +3,7 @@ import SpendingChart from "../components/SpendingChart";
 import ExpensesByCategoryChart from "../components/ExpensesByCategoryChart";
 import TransactionsTable from "../components/TransactionsTable";
 import BudgetsList from "../components/BudgetsList";
+import UpcomingBills from "../components/UpcomingBills";
 
 export default function Dashboard() {
   return (
@@ -14,7 +15,11 @@ export default function Dashboard() {
         <ExpensesByCategoryChart />
         <BudgetsList />
       </div>
-      <TransactionsTable />
+       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <TransactionsTable />
+        <UpcomingBills />
+      </div>
+      
       
     </div>
   );
